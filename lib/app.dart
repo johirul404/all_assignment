@@ -4,6 +4,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'Assignment-14/studentProfile.dart';
+import 'package:all_assignment/LiveTest/liveTestUI.dart';
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -21,10 +22,11 @@ class _MyAppState extends State<MyApp> {
     builder: (_, child) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'Personalprofile',
+        initialRoute: 'livetest',
         routes: {
           'StudentprofileA' : (context) => StudentprofileA(),
           'Personalprofile' : (context) => Personalprofile(),
+          'livetest' : (context) => LiveTestUi(),
         },
       );
     }
